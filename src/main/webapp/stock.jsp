@@ -10,10 +10,6 @@
 <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
 <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link type="text/css" rel="stylesheet" href="@{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css}" />
-<link type="text/css" rel="stylesheet" href="@{https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css}" />
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +17,42 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
+
 <title>Stock Analyzer</title>
+<script type="text/javascript">
+	window.onload = function() { 
+	
+	var chart = new CanvasJS.Chart("chartContainer", {
+		theme: "light2",
+		title: {
+			text: "100 Day Analysis"
+		},
+		subtitles: [{
+			text: "${symbol.getName()} 100 Day Close Prices"
+		}],
+		axisY:{
+			title: "Closing Price",
+			suffix: "$",
+			includeZero: false
+		},
+		data: [{
+			label: "Daily Close",
+			type: "spline",
+			toolTipContent: "<b>{label}</b>: {y}",
+			dataPoints: ${closePrices}
+		},
+		{
+			label: "10 Day SMA",
+			type: "spline",
+			toolTipContent: "<b>{label}</b>: {y}",
+			dataPoints: ${tenDayPrices}
+		}
+		]
+	});
+	chart.render();
+	 
+	}
+</script>
 
 </head>
 
@@ -67,6 +98,7 @@
 		  </table>
 	</div>
 	<div class="container border" style="text-align: left;">
-
+		<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	</div>
 </body>
