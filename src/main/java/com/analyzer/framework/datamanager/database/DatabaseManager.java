@@ -524,7 +524,7 @@ public class DatabaseManager implements CommandLineRunner {
 	@Scheduled(cron = "0 0 8 * * ?", zone = "CST")
 	public void updateStockTechData() {
 		List<StockTechData> std = new ArrayList<StockTechData>();
-		String url = "jdbc:mysql://hiller-home-network.dynu.net:3306/stock_analyzer_data_warehouse?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CST";
+		String url = "jdbc:mysql://hiller-home-network.dynu.net:1991/stock_analyzer_data_warehouse?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CST";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(url,"root","Daisy165*"); 

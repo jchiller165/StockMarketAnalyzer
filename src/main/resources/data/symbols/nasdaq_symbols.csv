@@ -29,6 +29,7 @@ ACAMU,Acamar Partners Acquisition Corp.,Finance,Business Services
 ACAMW,Acamar Partners Acquisition Corp.,Finance,Business Services
 ACST,Acasti Pharma Inc.,Health Care,Major Pharmaceuticals
 AXDX,Accelerate Diagnostics Inc.,Capital Goods,Biotechnology: Laboratory Analytical Instruments
+ACCP,Accelerated Pharma Inc.,n/a,n/a
 XLRN,Acceleron Pharma Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 ARAY,Accuray Incorporated,Health Care,Medical/Dental Instruments
 ACRX,AcelRx Pharmaceuticals Inc.,Health Care,Major Pharmaceuticals
@@ -112,6 +113,7 @@ ALDX,Aldeyra Therapeutics Inc.,Health Care,Major Pharmaceuticals
 ALEC,Alector Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 ALXN,Alexion Pharmaceuticals Inc.,Health Care,Major Pharmaceuticals
 ALCO,Alico Inc.,Consumer Non-Durables,Farming/Seeds/Milling
+ALIT,Alight Inc.,n/a,n/a
 ALGN,Align Technology Inc.,Health Care,Industrial Specialties
 ALIM,Alimera Sciences Inc.,Health Care,Major Pharmaceuticals
 ALYA,Alithya Group inc.,Technology,"Computer Software: Programming, Data Processing"
@@ -361,6 +363,7 @@ BOTJ,Bank of the James Financial Group Inc.,Finance,Major Banks
 OZK,Bank OZK,Finance,Major Banks
 BSVN,Bank7 Corp.,Finance,Major Banks
 BFIN,BankFinancial Corporation,Finance,Savings Institutions
+BFL,BankFlorida,n/a,n/a
 BWFG,Bankwell Financial Group Inc.,Finance,Major Banks
 BANR,Banner Corporation,Finance,Major Banks
 BZUN,Baozun Inc.,Consumer Services,Catalog/Specialty Distribution
@@ -417,6 +420,7 @@ BNGO,Bionano Genomics Inc.,Capital Goods,Biotechnology: Laboratory Analytical In
 BNGOW,Bionano Genomics Inc.,Capital Goods,Biotechnology: Laboratory Analytical Instruments
 BVXV,BiondVax Pharmaceuticals Ltd.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 BVXVW,BiondVax Pharmaceuticals Ltd.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+BNKL,Bionik Laboratories Corp.,n/a,n/a
 BPTH,Bio-Path Holdings Inc.,Health Care,Major Pharmaceuticals
 BIOS,BioScrip Inc.,Health Care,Medical/Nursing Services
 BSGM,BioSig Technologies Inc.,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
@@ -462,6 +466,7 @@ BOXL,Boxlight Corporation,Miscellaneous,Industrial Machinery/Components
 BWMC,Boxwood Merger Corp.,Finance,Business Services
 BWMCU,Boxwood Merger Corp.,Finance,Business Services
 BWMCW,Boxwood Merger Corp.,Finance,Business Services
+BBRX,Braeburn Pharmaceuticals Inc.,n/a,n/a
 BCLI,Brainstorm Cell Therapeutics Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 BWAY,Brainsway Ltd.,Health Care,Medical/Dental Instruments
 BVNSC,Brandes Investment Trust,n/a,n/a
@@ -591,6 +596,7 @@ CFBK,Central Federal Corporation,Finance,Savings Institutions
 CENT,Central Garden & Pet Company,Consumer Durables,Consumer Specialties
 CENTA,Central Garden & Pet Company,Consumer Durables,Consumer Specialties
 CVCY,Central Valley Community Bancorp,Finance,Major Banks
+CNTX,Centrexion Therapeutics Corporation,n/a,n/a
 CTRC,Centric Brands Inc.,Consumer Non-Durables,Apparel
 CENX,Century Aluminum Company,Basic Industries,Aluminum
 CNBKA,Century Bancorp Inc.,Finance,Major Banks
@@ -656,6 +662,7 @@ CHSCO,CHS Inc,Consumer Services,Farming/Seeds/Milling
 CHSCP,CHS Inc,Consumer Services,Farming/Seeds/Milling
 CHDN,Churchill Downs Incorporated,Consumer Services,Services-Misc. Amusement & Recreation
 CHUY,Chuy&#39;s Holdings Inc.,Consumer Services,Restaurants
+CBUS,Cibus Corp.,Consumer Non-Durables,Farming/Seeds/Milling
 CDTX,Cidara Therapeutics Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 CMCT,CIM Commercial Trust Corporation,Consumer Services,Real Estate Investment Trusts
 CMCTP,CIM Commercial Trust Corporation,Consumer Services,Real Estate Investment Trusts
@@ -875,6 +882,7 @@ DMPI,DelMar Pharmaceuticals Inc.,Health Care,Major Pharmaceuticals
 DNLI,Denali Therapeutics Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 DENN,Denny&#39;s Corporation,Consumer Services,Restaurants
 XRAY,DENTSPLY SIRONA Inc.,Health Care,Medical/Dental Instruments
+DDOC,DERMAdoctor Inc.,n/a,n/a
 DERM,Dermira Inc.,Health Care,Major Pharmaceuticals
 DEST,Destination Maternity Corporation,Consumer Services,Clothing/Shoe/Accessory Stores
 DXLG,Destination XL Group Inc.,Consumer Services,Clothing/Shoe/Accessory Stores
@@ -939,6 +947,7 @@ EGBN,Eagle Bancorp Inc.,Finance,Major Banks
 EGLE,Eagle Bulk Shipping Inc.,Transportation,Marine Transportation
 EFBI,Eagle Financial Bancorp Inc.,Finance,Savings Institutions
 EGRX,Eagle Pharmaceuticals Inc.,Health Care,Major Pharmaceuticals
+IGLE,Eagleline Acquisition Corp.,n/a,n/a
 EWBC,East West Bancorp Inc.,Finance,Major Banks
 EML,Eastern Company (The),Capital Goods,Industrial Machinery/Components
 EAST,Eastside Distilling Inc.,Consumer Non-Durables,Beverages (Production/Distribution)
@@ -992,6 +1001,7 @@ NDRAW,ENDRA Life Sciences Inc.,Health Care,Biotechnology: Electromedical & Elect
 EIGI,Endurance International Group Holdings Inc.,Technology,Computer Software: Prepackaged Software
 WATT,Energous Corporation,Technology,Radio And Television Broadcasting And Communications Equipment
 EFOI,Energy Focus Inc.,Consumer Durables,Building Products
+EHR,Energy Hunter Resources Inc.,n/a,n/a
 ERII,Energy Recovery Inc.,Technology,Industrial Machinery/Components
 ENG,ENGlobal Corporation,Consumer Services,Military/Government/Technical
 ENLV,Enlivex Therapeutics Ltd.,Health Care,Major Pharmaceuticals
@@ -1284,6 +1294,8 @@ FOXA,Fox Corporation,Consumer Services,Broadcasting
 FOXF,Fox Factory Holding Corp.,Consumer Non-Durables,Motor Vehicles
 FRAN,Francesca&#39;s Holdings Corporation,Consumer Services,Clothing/Shoe/Accessory Stores
 FELE,Franklin Electric Co. Inc.,Consumer Durables,Metal Fabrications
+FRAF,Franklin Financial Services Corporation,n/a,n/a
+FKLY,Frankly Inc.,n/a,n/a
 FRED,Fred&#39;s Inc.,Consumer Services,Department/Specialty Retail Stores
 RAIL,Freightcar America Inc.,Capital Goods,Railroads
 FEIM,Frequency Electronics Inc.,Capital Goods,Electrical Products
@@ -1300,6 +1312,7 @@ FCEL,FuelCell Energy Inc.,Miscellaneous,Industrial Machinery/Components
 FLGT,Fulgent Genetics Inc.,Health Care,Medical Specialities
 FORK,Fuling Global Inc.,Consumer Non-Durables,Plastic Products
 FLL,Full House Resorts Inc.,Consumer Services,Hotels/Resorts
+FMAX,Full Spectrum Inc.,n/a,n/a
 FULT,Fulton Financial Corporation,Finance,Major Banks
 FNKO,Funko Inc.,Consumer Non-Durables,Recreational Products/Toys
 FHL,Futu Holdings Limited,Finance,Investment Bankers/Brokers/Service
@@ -1332,6 +1345,7 @@ GNMK,GenMark Diagnostics Inc.,Health Care,Medical/Dental Instruments
 GNCA,Genocea Biosciences Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 GHDX,Genomic Health Inc.,Health Care,Medical Specialities
 GNPX,Genprex Inc.,Health Care,Major Pharmaceuticals
+GNST,GenSight Biologics S.A.,n/a,n/a
 GNTX,Gentex Corporation,Capital Goods,Auto Parts:O.E.M.
 THRM,Gentherm Inc,Capital Goods,Auto Parts:O.E.M.
 GEOS,Geospace Technologies Corporation,Capital Goods,Industrial Machinery/Components
@@ -1397,6 +1411,7 @@ GDEN,Golden Entertainment Inc.,Consumer Services,Services-Misc. Amusement & Recr
 GOGL,Golden Ocean Group Limited,Consumer Services,Marine Transportation
 GBDC,Golub Capital BDC Inc.,n/a,n/a
 GTIM,Good Times Restaurants Inc.,Consumer Services,Restaurants
+GBLK,GoodBulk Ltd.,n/a,n/a
 GSHD,Goosehead Insurance Inc.,Finance,Specialty Insurers
 GPRO,GoPro Inc.,Miscellaneous,Industrial Machinery/Components
 GPAQ,Gordon Pointe Acquisition Corp.,Finance,Business Services
@@ -1458,7 +1473,6 @@ HLG,Hailiang Education Group Inc.,Consumer Services,Other Consumer Services
 HNRG,Hallador Energy Company,Energy,Coal Mining
 HALL,Hallmark Financial Services Inc.,Finance,Property-Casualty Insurers
 HALO,Halozyme Therapeutics Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-HBK,Hamilton Bancorp Inc.,Finance,Savings Institutions
 HLNE,Hamilton Lane Incorporated,Finance,Investment Managers
 HJLI,Hancock Jaffe Laboratories Inc.,Health Care,Medical/Dental Instruments
 HJLIW,Hancock Jaffe Laboratories Inc.,Health Care,Medical/Dental Instruments
@@ -1562,6 +1576,7 @@ IBKC,IBERIABANK Corporation,Finance,Major Banks
 IBKCN,IBERIABANK Corporation,Finance,Major Banks
 IBKCO,IBERIABANK Corporation,Finance,Major Banks
 IBKCP,IBERIABANK Corporation,Finance,Major Banks
+IBEX,IBEX Holdings Limited,n/a,n/a
 ICAD,icad inc.,Health Care,Medical/Dental Instruments
 IEP,Icahn Enterprises L.P.,Capital Goods,Auto Parts:O.E.M.
 ICCH,ICC Holdings Inc.,Finance,Property-Casualty Insurers
@@ -2136,6 +2151,7 @@ MNST,Monster Beverage Corporation,Consumer Non-Durables,Beverages (Production/Di
 MORN,Morningstar Inc.,Finance,Investment Managers
 MOR,MorphoSys AG,Health Care,Major Pharmaceuticals
 MOSY,MoSys Inc.,Technology,Semiconductors
+MOTA,Mota Group Inc.,n/a,n/a
 MTFB,Motif Bio plc,Health Care,Major Pharmaceuticals
 MTFBW,Motif Bio plc,Health Care,Major Pharmaceuticals
 MPAA,Motorcar Parts of America Inc.,Capital Goods,Auto Parts:O.E.M.
@@ -2143,6 +2159,7 @@ MOTS,Motus GI Holdings Inc.,Health Care,Medical/Dental Instruments
 MPVD,Mountain Province Diamonds Inc.,Basic Industries,Precious Metals
 MOXC,Moxian Inc.,Technology,"Computer Software: Programming, Data Processing"
 COOP,Mr. Cooper Group Inc.,Finance,Finance: Consumer Services
+MRIC,MRI Interventions Inc,n/a,n/a
 MSBF,MSB Financial Corp.,Finance,Savings Institutions
 MTBC,MTBC Inc.,Technology,Computer Software: Prepackaged Software
 MTBCP,MTBC Inc.,Technology,Computer Software: Prepackaged Software
@@ -2201,6 +2218,7 @@ BABY,Natus Medical Incorporated,Health Care,Biotechnology: Electromedical & Elec
 JSM,Navient Corporation,Finance,Finance: Consumer Services
 NAVI,Navient Corporation,Finance,Investment Bankers/Brokers/Service
 NMCI,Navios Maritime Containers L.P.,Transportation,Marine Transportation
+NBCP,NB Capital Acquisition Corp.,n/a,n/a
 NBTB,NBT Bancorp Inc.,Finance,Major Banks
 NCSM,NCS Multistage Holdings Inc.,Energy,Oilfield Services/Equipment
 NEBU,Nebula Acquisition Corporation,Finance,Business Services
@@ -2244,6 +2262,7 @@ NWSA,News Corporation,Consumer Services,Newspapers/Magazines
 NEWT,Newtek Business Services Corp.,n/a,n/a
 NEWTI,Newtek Business Services Corp.,n/a,n/a
 NEWTZ,Newtek Business Services Corp.,n/a,n/a
+NXMD,Nexeon Medsystems Inc.,n/a,n/a
 NXST,Nexstar Media Group Inc.,Consumer Services,Broadcasting
 NEXT,NextDecade Corporation,Public Utilities,Oil & Gas Production
 NXGN,NextGen Healthcare Inc.,Technology,EDP Services
@@ -2376,6 +2395,7 @@ OSIS,OSI Systems Inc.,Technology,Semiconductors
 OSMT,Osmotica Pharmaceuticals plc,Health Care,Major Pharmaceuticals
 OSN,Ossen Innovation Co. Ltd.,Basic Industries,Steel/Iron Ore
 OTEL,Otelco Inc.,Public Utilities,Telecommunications Equipment
+OTG,OTG EXP Inc.,n/a,n/a
 OTIC,Otonomy Inc.,Health Care,Major Pharmaceuticals
 OTTW,Ottawa Bancorp Inc.,Finance,Savings Institutions
 OTTR,Otter Tail Corporation,Public Utilities,Electric Utilities: Central
@@ -2443,6 +2463,7 @@ PDSB,PDS Biotechnology Corporation,Health Care,Major Pharmaceuticals
 PDVW,pdvWireless Inc.,Public Utilities,Telecommunications Equipment
 SKIS,Peak Resorts Inc.,Consumer Services,Hotels/Resorts
 PGC,Peapack-Gladstone Financial Corporation,Finance,Commercial Banks
+PEER,PeerStream Inc.,n/a,n/a
 PEGA,Pegasystems Inc.,Technology,EDP Services
 PENN,Penn National Gaming Inc.,Consumer Services,Hotels/Resorts
 PVAC,Penn Virginia Corporation,Energy,Oil & Gas Production
@@ -2500,6 +2521,7 @@ PNTR,Pointer Telocation Ltd.,Technology,Radio And Television Broadcasting And Co
 PCOM,Points International Ltd.,Miscellaneous,Business Services
 POLA,Polar Power Inc.,Miscellaneous,Industrial Machinery/Components
 PTE,PolarityTE Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+POLY,PolyPid Ltd.,n/a,n/a
 POOL,Pool Corporation,Consumer Durables,Industrial Specialties
 POPE,Pope Resources,Consumer Non-Durables,Environmental Services
 BPOP,Popular Inc.,Finance,Major Banks
@@ -2524,6 +2546,7 @@ PLPC,Preformed Line Products Company,Basic Industries,Water Supply
 PFBI,Premier Financial Bancorp Inc.,Finance,Major Banks
 PINC,Premier Inc.,Consumer Services,Other Consumer Services
 PSDO,Presidio Inc.,Technology,Retail: Computer Software & Peripheral Equipment
+PBIO,Pressure BioSciences Inc.,n/a,n/a
 PRGX,PRGX Global Inc.,Consumer Services,Diversified Commercial Services
 PSMT,PriceSmart Inc.,Consumer Services,Department/Specialty Retail Stores
 PNRG,PrimeEnergy Resources Corporation,Energy,Oil & Gas Production
@@ -2546,6 +2569,7 @@ IPDN,Professional Diversity Network Inc.,Technology,"Computer Software: Programm
 PFIE,Profire Energy Inc.,Energy,Metal Fabrications
 PGNX,Progenics Pharmaceuticals Inc.,Health Care,Major Pharmaceuticals
 PRGS,Progress Software Corporation,Technology,Computer Software: Prepackaged Software
+LUNG,ProLung Inc.,n/a,n/a
 PFPT,Proofpoint Inc.,Technology,EDP Services
 PRPH,ProPhase Labs Inc.,Health Care,Major Pharmaceuticals
 PRQR,ProQR Therapeutics N.V.,Health Care,Major Pharmaceuticals
@@ -2641,9 +2665,11 @@ REG,Regency Centers Corporation,Consumer Services,Real Estate Investment Trusts
 REGN,Regeneron Pharmaceuticals Inc.,Health Care,Major Pharmaceuticals
 RGNX,REGENXBIO Inc.,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 RGLS,Regulus Therapeutics Inc.,Health Care,Major Pharmaceuticals
+REKR,Rekor Systems Inc.,n/a,n/a
 RBNC,Reliant Bancorp Inc.,Finance,Major Banks
 RELV,Reliv&#39; International Inc.,Health Care,Major Pharmaceuticals
 MARK,Remark Holdings Inc.,Consumer Services,Telecommunications Equipment
+RRI,Remora Royalties Inc.,n/a,n/a
 RNST,Renasant Corporation,Finance,Major Banks
 REGI,Renewable Energy Group Inc.,Basic Industries,Major Chemicals
 RCII,Rent-A-Center Inc.,Technology,Diversified Commercial Services
@@ -2781,6 +2807,7 @@ SHSP,SharpSpring Inc.,Technology,Computer Software: Prepackaged Software
 SHEN,Shenandoah Telecommunications Co,Public Utilities,Telecommunications Equipment
 PIXY,ShiftPixy Inc.,Technology,Diversified Commercial Services
 SHLO,Shiloh Industries Inc.,Capital Goods,Industrial Specialties
+SCCI,Shimmick Construction Company Inc.,n/a,n/a
 TYHT,Shineco Inc.,Consumer Non-Durables,Farming/Seeds/Milling
 SWAV,ShockWave Medical Inc.,Health Care,Medical/Dental Instruments
 SCVL,Shoe Carnival Inc.,Consumer Services,Clothing/Shoe/Accessory Stores
@@ -2817,6 +2844,7 @@ SVA,Sinovac Biotech Ltd.,Health Care,Major Pharmaceuticals
 SINT,SiNtx Technologies Inc.,Health Care,Medical/Dental Instruments
 SG,Sirius International Insurance Group Ltd.,Finance,Property-Casualty Insurers
 SIRI,Sirius XM Holdings Inc.,Consumer Services,Broadcasting
+SRVA,SIRVA Inc.,n/a,n/a
 SITO,SITO Mobile Ltd.,Miscellaneous,Business Services
 SKYS,Sky Solar Holdings Ltd.,Public Utilities,Electric Utilities: Central
 SKYW,SkyWest Inc.,Transportation,Air Freight/Delivery Services
@@ -2859,6 +2887,7 @@ SFST,Southern First Bancshares Inc.,Finance,Major Banks
 SMBC,Southern Missouri Bancorp Inc.,Finance,Banks
 SONA,Southern National Bancorp of Virginia Inc.,Finance,Major Banks
 SBSI,Southside Bancshares Inc.,Finance,Major Banks
+SY,So-Young International Inc.,n/a,n/a
 SP,SP Plus Corporation,Consumer Services,Rental/Leasing Companies
 SGRP,SPAR Group Inc.,Miscellaneous,Business Services
 SPKE,Spark Energy Inc.,Public Utilities,Power Generation
@@ -3215,6 +3244,7 @@ VALX,Validea Market Legends ETF,n/a,n/a
 VLY,Valley National Bancorp,Finance,Major Banks
 VLYPO,Valley National Bancorp,Finance,Major Banks
 VLYPP,Valley National Bancorp,Finance,Major Banks
+VTEC,Valtech SE,n/a,n/a
 VALU,Value Line Inc.,Finance,Investment Managers
 VNDA,Vanda Pharmaceuticals Inc.,Health Care,Major Pharmaceuticals
 BBH,VanEck Vectors Biotech ETF,n/a,n/a
@@ -3273,6 +3303,7 @@ VRTX,Vertex Pharmaceuticals Incorporated,Health Care,Major Pharmaceuticals
 VERU,Veru Inc.,Health Care,Major Pharmaceuticals
 VIA,Viacom Inc.,Consumer Services,Television Services
 VIAB,Viacom Inc.,Consumer Services,Television Services
+VMET,Viamet Pharmaceuticals Corp.,n/a,n/a
 VSAT,ViaSat Inc.,Technology,Radio And Television Broadcasting And Communications Equipment
 VIAV,Viavi Solutions Inc.,Technology,Semiconductors
 VICL,Vical Incorporated,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
@@ -3301,6 +3332,7 @@ VLGEA,Village Super Market Inc.,Consumer Services,Food Chains
 VIOT,Viomi Technology Co. Ltd,Consumer Durables,Consumer Electronics/Appliances
 VNOM,Viper Energy Partners LP,Energy,Oil & Gas Production
 VIRC,Virco Manufacturing Corporation,Consumer Durables,Industrial Specialties
+VTUS,Virgin Trains USA Inc.,Transportation,Railroads
 VTSI,VirTra Inc.,Consumer Services,Services-Misc. Amusement & Recreation
 VIRT,Virtu Financial Inc.,Finance,Investment Bankers/Brokers/Service
 VRTS,Virtus Investment Partners Inc.,Finance,Investment Managers
@@ -3311,6 +3343,7 @@ VRTU,Virtusa Corporation,Technology,EDP Services
 VISL,Vislink Technologies Inc.,Capital Goods,Telecommunications Equipment
 VTGN,VistaGen Therapeutics Inc.,Health Care,Major Pharmaceuticals
 VC,Visteon Corporation,Capital Goods,Auto Parts:O.E.M.
+VIST,Visterra Inc.,n/a,n/a
 VIVE,Viveve Medical Inc.,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
 VVPR,VivoPower International PLC,Public Utilities,Power Generation
 VVUS,VIVUS Inc.,Health Care,Major Pharmaceuticals
@@ -3320,6 +3353,7 @@ VYGR,Voyager Therapeutics Inc.,Health Care,Biotechnology: Biological Products (N
 VSEC,VSE Corporation,Consumer Services,Military/Government/Technical
 VTVT,vTv Therapeutics Inc.,Health Care,Major Pharmaceuticals
 VUZI,Vuzix Corporation,Technology,Radio And Television Broadcasting And Communications Equipment
+WAFU,Wah Fu Education Group Limited,n/a,n/a
 WTRH,Waitr Holdings Inc.,Miscellaneous,Business Services
 WBA,Walgreens Boots Alliance Inc.,Health Care,Medical/Nursing Services
 WAFD,Washington Federal Inc.,Finance,Major Banks
@@ -3327,6 +3361,7 @@ WASH,Washington Trust Bancorp Inc.,Finance,Major Banks
 WSBF,Waterstone Financial Inc.,Finance,Savings Institutions
 WTRE,Watford Holdings Ltd.,n/a,n/a
 WVE,WAVE Life Sciences Ltd.,Health Care,Major Pharmaceuticals
+WNFM,Wayne Farms Inc.,n/a,n/a
 WSTG,Wayside Technology Group Inc.,Technology,Retail: Computer Software & Peripheral Equipment
 WCFB,WCF Bancorp Inc.,Finance,Major Banks
 WDFC,WD-40 Company,Basic Industries,Major Chemicals
@@ -3414,6 +3449,7 @@ YMAB,Y-mAbs Therapeutics Inc.,Health Care,Major Pharmaceuticals
 YOGA,YogaWorks Inc.,Consumer Services,Other Consumer Services
 YGYI,Youngevity International Inc.,Consumer Services,Catalog/Specialty Distribution
 YRCW,YRC Worldwide Inc.,Transportation,Trucking Freight/Courier Services
+YJ,Yunji Inc.,n/a,n/a
 YY,YY Inc.,Technology,EDP Services
 ZFGN,Zafgen Inc.,Health Care,Major Pharmaceuticals
 ZAGG,ZAGG Inc,Consumer Services,Other Specialty Stores

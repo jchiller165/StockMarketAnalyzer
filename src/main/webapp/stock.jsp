@@ -25,10 +25,10 @@
 	var chart = new CanvasJS.Chart("chartContainer", {
 		theme: "light2",
 		title: {
-			text: "100 Day Analysis"
+			text: "${symbol.getName()}"
 		},
 		subtitles: [{
-			text: "${symbol.getName()} 100 Day Close Prices"
+			text: ""
 		}],
 		axisY:{
 			title: "Closing Price",
@@ -37,13 +37,19 @@
 		},
 		data: [{
 			label: "Daily Close",
-			type: "spline",
+			legendText: "Daily Close",
+			type: "line",
+			showInLegend: true, 
+	        name: "series1",
 			toolTipContent: "<b>{label}</b>: {y}",
 			dataPoints: ${closePrices}
 		},
 		{
 			label: "10 Day SMA",
-			type: "spline",
+			legendText: "10 Day SMA",
+			type: "line",
+			showInLegend: true, 
+	        name: "series2",
 			toolTipContent: "<b>{label}</b>: {y}",
 			dataPoints: ${tenDayPrices}
 		}

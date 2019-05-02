@@ -18,9 +18,11 @@ import com.analyzer.framework.model.Close;
 import com.analyzer.framework.model.Stock;
 import com.analyzer.framework.model.Symbol;
 import com.analyzer.framework.repo.CloseRepository;
+import com.analyzer.framework.repo.FiftyDaySMADataRepository;
 import com.analyzer.framework.repo.StockRepository;
 import com.analyzer.framework.repo.SymbolRepository;
 import com.analyzer.framework.repo.TenDaySMADataRepository;
+import com.analyzer.framework.repo.TwoHundredDaySMADataRepository;
 import com.google.gson.Gson;
 
 @Controller
@@ -34,7 +36,10 @@ public class MainController {
 	CloseRepository closeRepo;
 	@Autowired
 	TenDaySMADataRepository tenDayRepo;
-
+	@Autowired 
+	FiftyDaySMADataRepository fiftyDayRepo;
+	@Autowired
+	TwoHundredDaySMADataRepository twoHundredRepo;
 
 	
 	@RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
@@ -57,6 +62,14 @@ public class MainController {
 		String dataPoints1 = gsonObj.toJson(new ChartDataRetreiver().getData(tenDayRepo.findById(id).orElse(null).get100DayClose()));
 		logger.info("" + dataPoints1);
 		model.addAttribute("tenDayPrices", dataPoints1);
+		
+		String dataPoints2 = gsonObj.toJson(new ChartDataRetreiver().getData(fiftyDayRepo.findById(id).orElse(null).get100DayClose()));
+		logger.info("" + dataPoints2);
+		model.addAttribute("fiftyDayPrices", dataPoints2);
+		
+		String dataPoints3 = gsonObj.toJson(new ChartDataRetreiver().getData(twoHundredRepo.findById(id).orElse(null).get100DayClose()));
+		logger.info("" + dataPoints3);
+		model.addAttribute("twoHundredDayPrices", dataPoints3);
 		
 		return "stock";
 	}
