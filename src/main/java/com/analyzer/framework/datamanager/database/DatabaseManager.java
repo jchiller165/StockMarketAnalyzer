@@ -11,7 +11,9 @@ import java.sql.Timestamp;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,6 +57,9 @@ import com.analyzer.framework.repo.SymbolRepository;
 import com.analyzer.framework.repo.TenDaySMADataRepository;
 import com.analyzer.framework.repo.TwoHundredDaySMADataRepository;
 import com.analyzer.framework.repo.VolumeRepository;
+import com.analyzer.framework.web.StockAnalyzerMetrics;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 @Component
 public class DatabaseManager implements CommandLineRunner {
@@ -536,7 +541,9 @@ public class DatabaseManager implements CommandLineRunner {
 			
 			while(rs.next())  {
 				StockTechData s = new StockTechData();
+				Map<String, String> trends = this.analyzeClosePrices(rs.getString("symbol"));
 				s.setSymbol(rs.getString("symbol"));
+				s.setName(rs.getString("name"));
 				s.setOpen(rs.getDouble("open"));
 				s.setHigh(rs.getDouble("high"));
 				s.setLow(rs.getDouble("low"));
@@ -545,7 +552,12 @@ public class DatabaseManager implements CommandLineRunner {
 				s.setTenDaySMA(rs.getDouble("ten_day_sma"));
 				s.setFiftyDaySMA(rs.getDouble("fifty_day_sma"));
 				s.setTwoHundredDaySMA(rs.getDouble("two_hundred_day_sma"));
+				s.setCurrTrend(trends.get("currentClose"));
+				s.setTenDayTrend(trends.get("tenDayClose"));
+				s.setFiftyDayTrend(trends.get("fiftyDayClose"));
+				s.setTwoHundredTrend(trends.get("twoHundredClose"));
 				s.setUpdtDt(rs.getTimestamp("last_updt_dt"));
+
 				std.add(s);
 			}
 			con.close();
@@ -554,6 +566,46 @@ public class DatabaseManager implements CommandLineRunner {
 		}  
 		stockTechRepo.saveAll(std);
 		logger.info("Finished updating view");
+	}
+	
+	public Map<String, String> analyzeClosePrices(String id){
+		String currClose;
+		String tenDay;
+		String fiftyDay;
+		String twoHundred;
+		Map<String, String> trends = new HashMap<String, String>();
+		
+		List<Double> stockClose = closeRepo.findById(id).orElse(null).get100DayClose().subList(0, 10);
+		List<Double> tenDayClose = tenDayRepo.findById(id).orElse(null).get100DayClose().subList(0, 10);		
+		List<Double> fiftyDayClose = fiftyDayRepo.findById(id).orElse(null).get100DayClose().subList(0, 10);
+		List<Double> twoHundredDayClose = twoHundredDayRepo.findById(id).orElse(null).get100DayClose().subList(0, 10);
+		
+		if (stockClose.get(0) >= stockClose.get(5)) {
+			currClose = "Up";
+		}else {
+			currClose = "Down";
+		}
+		trends.put("currentClose", currClose);
+		
+		if (tenDayClose.get(0) >= tenDayClose.get(5)) {
+			tenDay = "Up";
+		}else {
+			tenDay = "Down";
+		}
+		trends.put("tenDayClose", tenDay);
+		if (fiftyDayClose.get(0) >= fiftyDayClose.get(5)) {
+			fiftyDay = "Up";
+		}else {
+			fiftyDay = "Down";
+		}
+		trends.put("fiftyDayClose", fiftyDay);
+		if (twoHundredDayClose.get(0) >= twoHundredDayClose.get(5)) {
+			twoHundred = "Up";
+		}else {
+			twoHundred = "Down";
+		}
+		trends.put("twoHundredClose", twoHundred);
+		return trends;
 	}
 
 	@Override

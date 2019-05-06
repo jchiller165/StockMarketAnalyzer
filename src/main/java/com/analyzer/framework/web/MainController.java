@@ -1,9 +1,7 @@
 package com.analyzer.framework.web;
 
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,12 +12,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.analyzer.framework.model.Close;
-import com.analyzer.framework.model.Stock;
-import com.analyzer.framework.model.Symbol;
+import com.analyzer.framework.model.StockTechData;
 import com.analyzer.framework.repo.CloseRepository;
 import com.analyzer.framework.repo.FiftyDaySMADataRepository;
 import com.analyzer.framework.repo.StockRepository;
+import com.analyzer.framework.repo.StockTechDataRepository;
 import com.analyzer.framework.repo.SymbolRepository;
 import com.analyzer.framework.repo.TenDaySMADataRepository;
 import com.analyzer.framework.repo.TwoHundredDaySMADataRepository;
@@ -40,11 +37,13 @@ public class MainController {
 	FiftyDaySMADataRepository fiftyDayRepo;
 	@Autowired
 	TwoHundredDaySMADataRepository twoHundredRepo;
-
+	@Autowired
+	StockTechDataRepository stockTechDataRepo;
 	
 	@RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
 	public String welcome(Model model) {
-  
+		List<StockTechData> std = stockTechDataRepo.findAll();
+		model.addAttribute("std", std);
 		return "home"; 	    		
 	}
 	
@@ -55,21 +54,31 @@ public class MainController {
 		model.addAttribute("stock", stockRepo.findById(id).orElse(null));
 		model.addAttribute("symbol", symbolRepo.findById(id).orElse(null));
 		
-		String dataPoints = gsonObj.toJson(new ChartDataRetreiver().getData(closeRepo.findById(id).orElse(null).get100DayClose()));
+		String dataPoints = gsonObj.toJson(new ChartDataRetreiver()
+				.getData(closeRepo.findById(id).orElse(null).get100DayClose()));
 		logger.info("" + dataPoints);
 		model.addAttribute("closePrices", dataPoints);
 		
-		String dataPoints1 = gsonObj.toJson(new ChartDataRetreiver().getData(tenDayRepo.findById(id).orElse(null).get100DayClose()));
+		String dataPoints1 = gsonObj.toJson(new ChartDataRetreiver()
+				.getData(tenDayRepo.findById(id).orElse(null).get100DayClose()));
 		logger.info("" + dataPoints1);
 		model.addAttribute("tenDayPrices", dataPoints1);
 		
-		String dataPoints2 = gsonObj.toJson(new ChartDataRetreiver().getData(fiftyDayRepo.findById(id).orElse(null).get100DayClose()));
+		String dataPoints2 = gsonObj.toJson(new ChartDataRetreiver()
+				.getData(fiftyDayRepo.findById(id).orElse(null).get100DayClose()));
 		logger.info("" + dataPoints2);
 		model.addAttribute("fiftyDayPrices", dataPoints2);
 		
-		String dataPoints3 = gsonObj.toJson(new ChartDataRetreiver().getData(twoHundredRepo.findById(id).orElse(null).get100DayClose()));
+		String dataPoints3 = gsonObj.toJson(new ChartDataRetreiver()
+				.getData(twoHundredRepo.findById(id).orElse(null).get100DayClose()));
 		logger.info("" + dataPoints3);
 		model.addAttribute("twoHundredDayPrices", dataPoints3);
+		
+		model.addAttribute("trends", new StockAnalyzerMetrics()
+				.analyzeClosePrices(closeRepo.findById(id).orElse(null).get100DayClose(), 
+				tenDayRepo.findById(id).orElse(null).get100DayClose(), 
+				fiftyDayRepo.findById(id).orElse(null).get100DayClose(), 
+				twoHundredRepo.findById(id).orElse(null).get100DayClose()));
 		
 		return "stock";
 	}

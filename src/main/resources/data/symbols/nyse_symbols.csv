@@ -81,7 +81,6 @@ ATI,Allegheny Technologies Incorporated,Basic Industries,Steel/Iron Ore
 ALLE,Allegion plc,Consumer Services,Diversified Commercial Services
 AGN,Allergan plc.,Health Care,Major Pharmaceuticals
 ALE,Allete Inc.,Public Utilities,Power Generation
-AKP,Alliance California Municipal Income Fund Inc,n/a,n/a
 ADS,Alliance Data Systems Corporation,Miscellaneous,Business Services
 AFB,Alliance National Municipal Income Fund Inc,n/a,n/a
 AWF,Alliance World Dollar Government Fund II,n/a,n/a
@@ -165,7 +164,7 @@ NLY^C,Annaly Capital Management Inc,n/a,n/a
 NLY^D,Annaly Capital Management Inc,n/a,n/a
 NLY^F,Annaly Capital Management Inc,n/a,n/a
 NLY^G,Annaly Capital Management Inc,n/a,n/a
-NLY^H,Annaly Capital Management Inc,n/a,n/a
+NLY^H.CL,Annaly Capital Management Inc,n/a,n/a
 AM,Antero Midstream Corporation,Public Utilities,Natural Gas Distribution
 AR,Antero Resources Corporation,Energy,Oil & Gas Production
 ANTM,Anthem Inc.,Health Care,Medical Specialities
@@ -1612,6 +1611,7 @@ KEG,Key Energy Services Inc.,Energy,Oilfield Services/Equipment
 KEY,KeyCorp,Finance,Major Banks
 KEY^I,KeyCorp,n/a,n/a
 KEY^J,KeyCorp,n/a,n/a
+KEY^K,KeyCorp,n/a,n/a
 KEYS,Keysight Technologies Inc.,Capital Goods,Industrial Machinery/Components
 KRC,Kilroy Realty Corporation,Consumer Services,Real Estate Investment Trusts
 KRP,Kimbell Royalty Partners,Energy,Oil & Gas Production

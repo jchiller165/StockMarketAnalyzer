@@ -9,6 +9,7 @@ import javax.persistence.Id;
 public class StockTechData {
 	@Id
 	String symbol;
+	String name;
 	double open;
 	double high;
 	double low;
@@ -17,6 +18,10 @@ public class StockTechData {
 	double tenDaySMA;
 	double fiftyDaySMA;
 	double twoHundredDaySMA;
+	String currTrend;
+	String tenDayTrend;
+	String fiftyDayTrend;
+	String twoHundredTrend;
 	Timestamp lastUpdtDt;
 	
 	public String getSymbol() {
@@ -24,6 +29,12 @@ public class StockTechData {
 	}
 	public void setSymbol(String symbol) {
 		this.symbol = symbol;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public double getOpen() {
 		return open;
@@ -79,5 +90,34 @@ public class StockTechData {
 	public Timestamp getUpdateDt() {
 		return this.lastUpdtDt;
 	}
-	
+	public String getCurrTrend() {
+		return currTrend;
+	}
+	public String getTenDayTrend() {
+		return tenDayTrend;
+	}
+	public String getFiftyDayTrend() {
+		return fiftyDayTrend;
+	}
+	public String getTwoHundredTrend() {
+		return twoHundredTrend;
+	}
+	public Timestamp getLastUpdtDt() {
+		return lastUpdtDt;
+	}
+	public void setCurrTrend(String currTrend) {
+		this.currTrend = currTrend;
+	}
+	public void setTenDayTrend(String tenDayTrend) {
+		this.tenDayTrend = tenDayTrend;
+	}
+	public void setFiftyDayTrend(String fiftyDayTrend) {
+		this.fiftyDayTrend = fiftyDayTrend;
+	}
+	public void setTwoHundredTrend(String twoHundredTrend) {
+		this.twoHundredTrend = twoHundredTrend;
+	}
+	public void setLastUpdtDt(Timestamp lastUpdtDt) {
+		this.lastUpdtDt = lastUpdtDt;
+	}
 }

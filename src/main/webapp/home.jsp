@@ -23,7 +23,6 @@
 
 <title>Stock Analyzer</title>
 
-
 </head>
 <body>
 	<div>
@@ -41,16 +40,17 @@
 		<table id="stockTechDataTable" class="table table-striped table-bordered" style="text-align: center;" cellspacing="0" width="90%">
 			<thead class="bg-primary text-white">
 				<tr>
-				  <th>Symbol</th>
-				  <th>Open</th>
-				  <th>High</th>
-				  <th>Low</th>
-				  <th>Close</th>
-				  <th>10 Day SMA</th>
-				  <th>50 Day SMA</th>
-				  <th>200 Day SMA</th>
-				  <th>Golden Cross</th>
-				  <th>% Difference</th>
+				  <th style="text-align: center;">Symbol</th>
+				  <th style="text-align: center;">Open</th>
+				  <th style="text-align: center;">High</th>
+				  <th style="text-align: center;">Low</th>
+				  <th style="text-align: center;">Close</th>
+				  <th style="text-align: center;">10 Day SMA</th>
+				  <th style="text-align: center;">50 Day SMA</th>
+				  <th style="text-align: center;">200 Day SMA</th>
+				  <th style="text-align: center;">Golden Cross</th>
+				  <th style="text-align: center;">% Difference</th>
+				  <th style="text-align: center;">Buy Rating</th>
 				</tr>  
 			</thead>
 		</table>
@@ -73,7 +73,7 @@
 					             }
 					             return data;
 					          }
-						},	
+						},
 						{ "data": "open"},
 						{ "data": "high"},
 						{ "data": "low"},
@@ -97,6 +97,20 @@
 									return "% " + dif.toFixed(2)
 								}
 							}
+						},
+						{ "data" : function (data){
+								var buyRating = ""
+								if (data.currTrend == "Up" && data.tenDayTrend == "Up" && data.fiftyDayTrend == "Up" && data.twoHundredTrend == "Up"){
+									return 'Strong Buy'
+								}else if((data.currTrend == "Up" || data.tenDayTrend == "Up") && (data.fiftyDayTrend == "Down" || data.twoHundredTrend == "Down")){
+									return 'Buy'
+								}else if(data.currTrend == "Down" || data.tenDayTrend == "Down" || data.fiftyDayTrend == "Down" || data.twoHundredTrend == "Down"){
+									return 'Hold'
+								}else {
+									return 'Sell'
+								}
+							}
+							
 						}
 					]
 				 })

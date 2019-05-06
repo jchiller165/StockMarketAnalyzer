@@ -55,9 +55,8 @@
 		}
 		]
 	});
-	chart.render();
-	 
-	}
+	chart.render(); 
+}
 </script>
 
 </head>
@@ -73,21 +72,26 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="container border" style="text-align: left;">
+	
+	<div class="container" style="text-align: left;">
 		<h2>${stock.symbol} </h2>
 			<h4>Name: ${symbol.getName()}</h4>
 			<h4>Industry: ${symbol.getIndustry()}</h4>
 			<h4>Sector: ${symbol.getSector()}</h4>
+	</div>
+	
+	<div class="container">
 		<table class="table table-striped table-bordered" style="text-align: center;">
 		  <thead class="bg-primary text-white">
 		    <tr>
-		      <th scope="col">Open</th>
-		      <th scope="col">High</th>
-		      <th scope="col">Low</th>
-		      <th scope="col">Close</th>
-		      <th scope="col">Dividend Amount</th>
-		      <th scope="col">Volume</th>
-		      <th scope="col">Last Update Date</th>
+		      <th scope="col" style="text-align: center;">Open</th>
+		      <th scope="col" style="text-align: center;">High</th>
+		      <th scope="col" style="text-align: center;">Low</th>
+		      <th scope="col" style="text-align: center;">Close</th>
+		      <th scope="col" style="text-align: center;">Current Trend</th>
+		      <th scope="col" style="text-align: center;">Ten Day Trend</th>
+		      <th scope="col" style="text-align: center;">Fifty Day Trend</th>
+		      <th scope="col" style="text-align: center;">Two Hundred Day Trend</th>
 		    </tr>
 		  </thead>
 			  <tbody>
@@ -96,9 +100,38 @@
 			  	<td>$${stock.high}</td>
 			  	<td>$${stock.low}</td>
 			  	<td>$${stock.close}</td>
-			  	<td>%${stock.divAmt}</td>
-			  	<td>${stock.volume}</td>
-			  	<td>${stock.updtDt}</td>
+			  	<c:choose>
+			  		<c:when test="${trends.get('currentClose') == 'Up'}">
+			  			<td style="color:green;">${trends.get("currentClose")}</td>
+			  		</c:when>
+			  		<c:otherwise>
+			  			<td style="color:red;">${trends.get("currentClose")}</td>
+			  		</c:otherwise>
+			  	</c:choose>
+			  	<c:choose>
+			  		<c:when test="${trends.get('tenDayClose') == 'Up'}">
+			  			<td style="color:green;">${trends.get("tenDayClose")}</td>
+			  		</c:when>
+			  		<c:otherwise>
+			  			<td style="color:red;">${trends.get("tenDayClose")}</td>
+			  		</c:otherwise>
+			  	</c:choose>
+			  	<c:choose>
+			  		<c:when test="${trends.get('fiftyDayClose') == 'Up'}">
+			  			<td style="color:green;">${trends.get("fiftyDayClose")}</td>
+			  		</c:when>
+			  		<c:otherwise>
+			  			<td style="color:red;">${trends.get("fiftyDayClose")}</td>
+			  		</c:otherwise>
+			  	</c:choose>
+			  	<c:choose>
+			  		<c:when test="${trends.get('twoHundredClose') == 'Up'}">
+			  			<td style="color:green;">${trends.get("twoHundredClose")}</td>
+			  		</c:when>
+			  		<c:otherwise>
+			  			<td style="color:red;">${trends.get("twoHundredClose")}</td>
+			  		</c:otherwise>
+			  	</c:choose>
 			  </tr>
 			  </tbody>
 		  </table>
