@@ -22,13 +22,13 @@
 <script type="text/javascript">
 	window.onload = function() { 
 	
-	var chart = new CanvasJS.Chart("chartContainer", {
+	var chart = new CanvasJS.Chart("closeContainer", {
 		theme: "light2",
 		title: {
 			text: "${symbol.getName()}"
 		},
 		subtitles: [{
-			text: ""
+			text: "Close Price Trend"
 		}],
 		axisY:{
 			title: "Closing Price",
@@ -55,7 +55,42 @@
 		}
 		]
 	});
-	chart.render(); 
+	
+	var chart2 = new CanvasJS.Chart("macdContainer", {
+		theme: "light2",
+		title: {
+			text: "${symbol.getName()}"
+		},
+		subtitles: [{
+			text: "MACD Trend"
+		}],
+		axisY:{
+			title: "MACD Data",
+			suffix: "",
+			includeZero: true
+		},
+		data: [{
+			label: "Signal",
+			legendText: "Signal",
+			type: "line",
+			showInLegend: true, 
+	        name: "series1",
+			toolTipContent: "<b>{label}</b>: {y}",
+			dataPoints: ${signal}
+		},
+		{
+			label: "MACD",
+			legendText: "MACD",
+			type: "line",
+			showInLegend: true, 
+	        name: "series2",
+			toolTipContent: "<b>{label}</b>: {y}",
+			dataPoints: ${macd}
+		}
+		]
+	});
+	chart.render();
+	chart2.render(); 
 }
 </script>
 
@@ -137,7 +172,10 @@
 		  </table>
 	</div>
 	<div class="container border" style="text-align: left;">
-		<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+		<div id="closeContainer" style="height: 370px; width: 100%;"></div>
 	</div>
+	<div class="container border" style="text-align: left;">
+		<div id="macdContainer" style="height: 370px; width: 100%;"></div>
+	</div>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>

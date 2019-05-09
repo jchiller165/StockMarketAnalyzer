@@ -2,6 +2,7 @@ package com.analyzer.framework.web;
 
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -79,6 +80,20 @@ public class MainController {
 				tenDayRepo.findById(id).orElse(null).get100DayClose(), 
 				fiftyDayRepo.findById(id).orElse(null).get100DayClose(), 
 				twoHundredRepo.findById(id).orElse(null).get100DayClose()));
+
+		String signals = gsonObj.toJson(new ChartDataRetreiver()
+				.getData(new MACDRetreiver().getTenDayMACD(id).get("signal").subList(100, 200)));
+		
+
+		String histo = gsonObj.toJson(new ChartDataRetreiver()
+				.getData(new MACDRetreiver().getTenDayMACD(id).get("histogram").subList(100, 200)));
+		
+		String macd = gsonObj.toJson(new ChartDataRetreiver()
+				.getData(new MACDRetreiver().getTenDayMACD(id).get("macd").subList(100, 200)));
+		
+		model.addAttribute("signal", signals);
+		model.addAttribute("histo", histo);
+		model.addAttribute("macd", macd);
 		
 		return "stock";
 	}

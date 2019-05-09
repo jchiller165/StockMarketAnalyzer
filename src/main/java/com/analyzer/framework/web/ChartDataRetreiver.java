@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ChartDataRetreiver {
 	Map<Object,Object> map = null;
 	List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
@@ -12,7 +15,9 @@ public class ChartDataRetreiver {
 	public List<Map<Object,Object>> getData(List<Double> d){
 		
 		for(int i = 100; i > 0; i --) {
-			map = new HashMap<Object,Object>(); map.put("label", i); map.put("y", d.get(i-1)); 
+			map = new HashMap<Object,Object>(); 
+			map.put("label", i);
+			map.put("y", d.get(i-1)); 
 			list.add(map);
 		}
 		
